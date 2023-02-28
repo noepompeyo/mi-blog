@@ -2,10 +2,11 @@ import Head from 'next/head'
 
 import Link from 'next/link'
 import { getAllFilesMetadata } from '@/lib/mdx'
-import { Container, Text,  ChakraProvider, Flex, Heading, Box , Image} from '@chakra-ui/react';
+import {  Text,  ChakraProvider, Flex, Heading, Box , Image} from '@chakra-ui/react';
 import PostListItem from '@/components/PostListItem';
 import SectionsLinks from '@/components/SectionsLinks';
 import SocialNetworks from '@/components/SocialNetworks';
+import Footer from '@/components/Footer';
 
 
 
@@ -108,7 +109,10 @@ export default function Home({posts}) {
           />
           
             </Link>
-          ))}           
+          ))}     
+          <Link pt={8} href="/articulos" >
+            Ver todas 👀 
+            </Link>      
           </Box>
         
           
@@ -116,6 +120,7 @@ export default function Home({posts}) {
 
       </Flex>
 </Box>
+<Footer/>
     
 </ChakraProvider>
   </>
