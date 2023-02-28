@@ -2,8 +2,10 @@ import Head from 'next/head'
 
 import Link from 'next/link'
 import { getAllFilesMetadata } from '@/lib/mdx'
-import { Container, Text,  ChakraProvider } from '@chakra-ui/react';
+import { Container, Text,  ChakraProvider, Flex, Heading, Box , Image} from '@chakra-ui/react';
 import PostListItem from '@/components/PostListItem';
+import SectionsLinks from '@/components/SectionsLinks';
+import SocialNetworks from '@/components/SocialNetworks';
 
 
 
@@ -20,28 +22,83 @@ export default function Home({posts}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Box
+      w="100%"
+      bg="gray.900"
+      borderTop="10px solid"
+      borderColor="orange.300"
+      color="white"
+      >
+
+      <SectionsLinks/>
 
 
-      <Container >
+      <Flex 
+      direction={["column", "row"]}
+      justify="space-between"
+      align="left"
+      >
+        <Box
+        width={["100%", "75%"]}
+        order={[2,1]}
+        >
+
+      <Heading 
+      fontFamily="mono"
+      as="h1" 
+      size="xl"
+      ml={8}
+      mb={4}
+      textAlign="left"
+      > 
+      Noe Pompeyo
+      </Heading>
         <Text 
-        as="h1" 
-        fontFamily="Tahoma" 
-        align="center"
-        fontSize="xl"
+        fontSize="md"
+        lineHeight={1.75}
+        mt={[4,0]}
+        mb={4}
+        ml={8}>
+        Soy Front End developer aprendiendo las tecnologias para contruir en la web,  me gusta  la tecnologia y la ciencia.
+        </Text>
+        </Box>
+        <Box
+        width={["25%","18%"]}
+        order={[1,2]}
+        alignSelf={["start", "center"]}
+        mr={8}
+        >
+          <Image
+          width="100%"
+          borderRadius="full"
+          objectFit="cover"
+          boxSize="150px"
+          src="/assets/noe_pompeyo.jpg"
+          alt="Noe Pompeyo"
 
-        >mi blog jamstack</Text>
+          />
+
+          
+
+        </Box>
+      </Flex>
+      <SocialNetworks/>
+
+
+      <Flex direction={["column", "column", "row"]}>
+        <Box>
 
         <Text
-        align="center"
-        fontFamily="Tahoma"
+        align="left"
+        fontFamily="mono"
         fontWeight="600"
         as="h3"
-        fontSize="md"
+        fontSize="xl"
         my="4"
+        ml={6}
         >
-          Ultimas publicaciones
-        </Text>
-        
+          Últimas publicaciones
+        </Text>        
           {posts.map((post) => ( 
           <Link href={`/${post.slug}`} key={post.slug} >
             
@@ -52,11 +109,13 @@ export default function Home({posts}) {
           
             </Link>
           ))}           
+          </Box>
         
           
       
 
-      </Container>
+      </Flex>
+</Box>
     
 </ChakraProvider>
   </>
@@ -66,7 +125,7 @@ export default function Home({posts}) {
 
 export async function getStaticProps () {
   const posts = await getAllFilesMetadata();
-  console.log(posts);
+  // console.log(posts);
   return{
     props: {posts},
   };
