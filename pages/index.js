@@ -1,8 +1,8 @@
 import Head from 'next/head'
-
+import {  Text,  ChakraProvider, Flex, Heading, Box , Image} from '@chakra-ui/react';
+import { formatDate } from '@/lib/format-date';
 import Link from 'next/link'
 import { getAllFilesMetadata } from '@/lib/mdx'
-import {  Text,  ChakraProvider, Flex, Heading, Box , Image} from '@chakra-ui/react';
 import PostListItem from '@/components/PostListItem';
 import SectionsLinks from '@/components/SectionsLinks';
 import SocialNetworks from '@/components/SocialNetworks';
@@ -105,7 +105,8 @@ export default function Home({posts}) {
             
           <PostListItem
             title={post.title}
-            date= {post.date}
+            date= {formatDate(post.date)}
+            
           />
           
             </Link>

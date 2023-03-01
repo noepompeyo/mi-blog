@@ -15,7 +15,7 @@ export default function Footer() {
         py={16}
         w="100%"
         direction="row"
-        justify="center"
+        justify="center           "
         textAlign="center"
         align="center"
         fontFamily="mono"
