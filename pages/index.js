@@ -27,6 +27,7 @@ export default function Home({posts}) {
       
 
       w="100vw"
+      h='100vh'
       bg="gray.900"
       borderTop="10px solid"
       borderColor="orange.300"
