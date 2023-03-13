@@ -4,18 +4,18 @@ import { Container, Flex } from "@chakra-ui/react";
 export default function Footer() {
   return (
     <Container 
-    maxW="container.2xl" 
+    w='100vw' 
     bg="gray.900"
     color="white"
-    position="relative"
+    
     overflow="visible"
     zIndex="2"
     >
         <Flex
-        py={16}
+        py={14}
         w="100%"
         direction="row"
-        justify="center           "
+        justify="center"           
         textAlign="center"
         align="center"
         fontFamily="mono"

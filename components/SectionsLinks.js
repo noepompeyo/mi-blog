@@ -5,6 +5,7 @@ const SectionLinkItem = (NextLink);
 
 
 export default function SectionsLinks() {
+  
 
     const section = [
         {name : "🏠", url: "/"},
@@ -16,10 +17,15 @@ export default function SectionsLinks() {
 return (
   <nav>
     <Flex as="nav" p="40px" alignItems="center">
-      <HStack spacing="20px">
+      <HStack spacing="20px" >
         {section.map(({ name, url }) => (
-          <SectionLinkItem key={name} href={url} passHref>
+          <SectionLinkItem  key={name} href={url} passHref 
+          
+          >
+            <Text as='kbd' _hover={{borderBottom:'1px', borderColor:'white'}}  >
+
             {name}
+            </Text>
           </SectionLinkItem>
         ))}
       </HStack>

@@ -4,7 +4,7 @@ import { BsFacebook, BsGithub, BsInstagram, BsTwitter,  } from "react-icons/bs";
 
 export default function SocialNetworks() {
   return (
-    <HStack spacing="24px" my="4" ml={6}>
+    <HStack spacing="24px" my="4" >
         <Link href="https://www.facebook.com/profile.php?id=100070381551144">
             
         <BsFacebook size="24px" />

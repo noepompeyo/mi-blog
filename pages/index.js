@@ -62,7 +62,7 @@ ml={4}
 mb={4}
 textAlign="left"
 > 
-Noe Pompeyo
+Noe Pompeyo.
 </Heading>
   <Text 
   fontSize="md"
@@ -134,11 +134,11 @@ Noe Pompeyo
 
 
 </Flex>
+<Footer/>
         </Box>
 
       
-</Box>
-<Footer/>
+      </Box>
     
 </ChakraProvider>
   </>
