@@ -39,7 +39,7 @@ export default function Home({posts}) {
         <Box
         w="736px"
         
-        m="auto"
+        
       
         >
         <SectionsLinks/>
@@ -69,9 +69,10 @@ Noe Pompeyo.
   fontSize="md"
   lineHeight={1.75}
   mt={[4,0]}
-  mb={4}
-  mr={4}
-  ml={4}>
+  m={4}
+  
+  
+  >
   Soy Front End developer aprendiendo las tecnologias para contruir en la web,  me gusta  la tecnologia y la ciencia.
   </Text>
   </Box>
@@ -135,7 +136,7 @@ Noe Pompeyo.
 
 
 </Flex>
-<Footer/>
+        <Footer/>
         </Box>
 
       
