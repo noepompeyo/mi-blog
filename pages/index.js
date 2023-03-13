@@ -38,6 +38,7 @@ export default function Home({posts}) {
       >
         <Box
         w="736px"
+        m='auto'
         
         
       
@@ -59,8 +60,8 @@ align="left"
 fontFamily="mono"
 as="h1" 
 size="xl"
-ml={4}
-mb={4}
+pl={4}
+pb={4}
 textAlign="left"
 > 
 Noe Pompeyo.
@@ -97,7 +98,10 @@ Noe Pompeyo.
 
   </Box>
 </Flex>
-<SocialNetworks/>
+<Box ml={4}>
+
+  <SocialNetworks/>
+</Box>
 
 
 <Flex direction={["column", "column", "row"]}>

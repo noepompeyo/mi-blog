@@ -17,7 +17,7 @@ export default function SectionsLinks() {
 return (
   <nav>
     <Flex as="nav" p="40px" alignItems="center">
-      <HStack spacing="20px" >
+      <HStack spacing="14px" >
         {section.map(({ name, url }) => (
           <SectionLinkItem  key={name} href={url} passHref 
           
