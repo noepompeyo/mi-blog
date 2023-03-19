@@ -1,7 +1,7 @@
 import { MDXRemote } from 'next-mdx-remote';
 import { getFileBySlug, getFiles } from '@/lib/mdx';
 
-export default function Post({ source, frontmatter }) {
+export default function Post({ source }) {
   console.log(source);
   return <MDXRemote {...source} />;
 }

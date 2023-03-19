@@ -1,9 +1,9 @@
 import NextLink from 'next/link';
-import { Text,  Flex, HStack } from '@chakra-ui/react';
+import { Text, Flex, HStack } from '@chakra-ui/react';
 
 const SectionLinkItem = NextLink;
 
-export default function SectionsLinks() {
+export const SectionsLinks = () => {
   const section = [
     { name: '🏠', url: '/' },
     { name: 'Acerca de', url: '/sobre-mi' },
@@ -25,4 +25,4 @@ export default function SectionsLinks() {
       </Flex>
     </nav>
   );
-}
+};

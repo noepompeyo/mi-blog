@@ -4,9 +4,9 @@ import { formatDate } from '@/lib/format-date';
 import Link from 'next/link';
 import { getAllFilesMetadata } from '@/lib/mdx';
 import PostListItem from '@/components/PostListItem';
-import SectionsLinks from '@/components/SectionsLinks';
+import { SectionsLinks } from '@/components/SectionsLinks';
 import SocialNetworks from '@/components/SocialNetworks';
-import Footer from '@/components/Footer';
+import { Footer } from '@/components/Footer';
 
 export default function Home({ posts }) {
   return (
@@ -18,16 +18,9 @@ export default function Home({ posts }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        
-        <Box 
-        w="100vw" 
-                
-        bg="gray.900" 
-        borderTop="10px solid" 
-        borderColor="orange.300" 
-        color="white" 
-        display="flex">
-          <Box w="736px" m="auto" >
+
+        <Box w="100vw" bg="gray.900" borderTop="10px solid" borderColor="orange.300" color="white" display="flex">
+          <Box w="736px" m="auto">
             <SectionsLinks />
 
             <Flex direction={['column', 'row']} justify="space-between" align="left">
@@ -48,14 +41,8 @@ export default function Home({ posts }) {
             </Box>
 
             <Flex direction={['column', 'column', 'row']}>
-              <Box w={["100%", "100", "75%"] } mb="25px">
-                <Text 
-                align="left" 
-                fontFamily="mono" 
-                fontWeight="600" 
-                as="h3" 
-                fontSize="xl" 
-                ml={4}>
+              <Box w={['100%', '100', '75%']} mb="25px">
+                <Text align="left" fontFamily="mono" fontWeight="600" as="h3" fontSize="xl" ml={4}>
                   Últimas publicaciones
                 </Text>
                 {posts.map((post) => (
@@ -64,23 +51,25 @@ export default function Home({ posts }) {
                   </Link>
                 ))}
                 <Box ml={4}>
-
-                  <Link href="/articulos" pt={8} color="gray.900" >Ver todas </Link>
+                  <Link href="/articulos" pt={8} color="gray.900">
+                    Ver todas{' '}
+                  </Link>
                 </Box>
-          
               </Box>
             </Flex>
-            <Footer />
+            <Box display="grid" placeContent="center">
+              <Footer />
+            </Box>
           </Box>
         </Box>
       </ChakraProvider>
     </>
-  )
+  );
 }
 
 export async function getStaticProps() {
   const posts = await getAllFilesMetadata();
-  
+
   return {
     props: { posts },
   };
