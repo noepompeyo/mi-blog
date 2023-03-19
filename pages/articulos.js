@@ -1,54 +1,17 @@
-import Footer from "@/components/Footer";
 
-import SectionsLinks from "@/components/SectionsLinks";
-import {
-  Box,
-  ChakraProvider,
-  Container,
-  Heading,
-  Text,
-  Image,
-  Center,
-  Flex,
-  Card
-} from "@chakra-ui/react";
-import Link from "next/link";
+import Layout from '@/components/layout';
+import { Box, ChakraProvider, Container, Heading, Text, Image, Center, Flex, Card } from '@chakra-ui/react';
 
 export default function SobreMi() {
   return (
     <>
-      <ChakraProvider>
-        <Box          
-          w="100vw"
-          bg="gray.900"
-          color="white"
-          h="100vh"
-          borderTop='10px solid'
-          borderColor='orange.300'
-        >
-        <Box 
-        maxW="736px"        
-        m="auto"      
-        >        
-        <SectionsLinks/>
-        <Heading ml={4}
-        mb={16}
-      
-        >Articulos</Heading>
+    <ChakraProvider>
 
-        <Heading>Aqui deberian ir mis articulos </Heading>
+    <Layout>
+      <Heading>Aqui deberian ir mis articulos</Heading>
+    </Layout>
+    </ChakraProvider>
 
-
-       
-       
-    
-          
-            <Footer />
-            
-      </Box>
-            
-        </Box>
-      </ChakraProvider>
-    </>
+      </>
   );
 }

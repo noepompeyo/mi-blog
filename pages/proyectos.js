@@ -1,35 +1,19 @@
-import Footer from "@/components/Footer";
+import { Box,  Heading, Text, Image } from '@chakra-ui/react';
+import projectsData from '@/components/projectsData';
+import Link from 'next/link';
+import Layout from '@/components/layout';
 
-import SectionsLinks from "@/components/SectionsLinks";
-import { Box, ChakraProvider, Heading, Text, Image } from "@chakra-ui/react";
-import projectsData from "@/components/projectsData";
-import Link from "next/link";
-
-export default function SobreMi() {
+export default function Proyectos() {
   return (
     <>
-      <ChakraProvider>
-        <Box
-          w="100vw"
-          bg="gray.900"
-          color="white"
-          h="100vh"
-          borderTop="10px solid"
-          borderColor="orange.300"
-        >
-          <Box maxW="768px" m="auto">
-            <SectionsLinks />
-            <Heading ml={4} mb={16}>
+    <Layout>
+    <Heading ml={4} mb={16}>
               Projects
             </Heading>
 
-            <Box border="2px solid" color="white" maxW="380px" pl={4} h='auto'>
+            <Box border="2px solid" color="white" maxW="300px" pl={4} m="auto" borderRadius={32}>
               <Link href={projectsData.href}>
-                <Image
-                  alt={projectsData.title}
-                  src="/assets/google.png"
-                  objectFit="cover"
-                />
+                <Image alt={projectsData.title} src="/assets/google.png" objectFit="cover" />
               </Link>
 
               <Link href={projectsData.href}>
@@ -43,12 +27,11 @@ export default function SobreMi() {
                   Learn more &rarr;
                 </Text>
               </Link>
-            </Box>
-          </Box>
-
-          <Footer />
-        </Box>
-      </ChakraProvider>
+              </Box>
+    </Layout>
+  
+    
     </>
-  );
-}
+  )
+  }
+
