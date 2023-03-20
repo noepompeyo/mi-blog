@@ -47,7 +47,7 @@ export default function Home({ posts }) {
                 </Text>
                 {posts.map((post) => (
                   <Link href={`/${post.slug}`} key={post.slug}>
-                    <PostListItem title={post.title} date={formatDate(post.date)} />
+                    <PostListItem title={post.title} date={formatDate(post.date)} tags={post.tags} />
                   </Link>
                 ))}
                 <Box ml={4}>

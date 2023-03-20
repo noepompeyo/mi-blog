@@ -6,7 +6,7 @@ export const Layout = ({ children }) => {
   return (
     <>
       <Box w="100%" h="100vh" bg="gray.900" borderTop="10px solid" borderColor="orange.300" color="white" display="flex">
-        <Box maxW="736px" m="auto">
+        <Box minW="736px" m="auto">
           <Box position="absolute" top="0">
             <SectionsLinks />
           </Box>

@@ -1,15 +1,10 @@
 import NextLink from 'next/link';
+import section from '@/data/sections';
 import { Text, Flex, HStack } from '@chakra-ui/react';
 
 const SectionLinkItem = NextLink;
 
 export const SectionsLinks = () => {
-  const section = [
-    { name: '🏠', url: '/' },
-    { name: 'Acerca de', url: '/sobre-mi' },
-    { name: 'Artículos', url: '/articulos' },
-    { name: 'Proyectos', url: '/proyectos' },
-  ];
   return (
     <nav>
       <Flex as="nav" p="40px" alignItems="center">
