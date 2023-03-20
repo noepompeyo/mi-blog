@@ -20,7 +20,7 @@ export default function SobreMi({ posts }) {
                 <PostListItem 
                 title={post.title} 
                 date={formatDate(post.date)}
-                tags={posts.tags}
+                tags={post.tags}
 
               
                 />
