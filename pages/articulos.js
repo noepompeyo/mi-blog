@@ -17,13 +17,7 @@ export default function SobreMi({ posts }) {
 
             {posts?.map((post) => (
               <Link href={`/${post.slug}`} key={post.slug}>
-                <PostListItem 
-                title={post.title} 
-                date={formatDate(post.date)}
-                tags={post.tags}
-
-              
-                />
+                <PostListItem title={post.title} date={formatDate(post.date)} tags={post.tags} />
               </Link>
             ))}
             <Box ml={4}></Box>
