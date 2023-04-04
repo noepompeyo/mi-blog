@@ -1,28 +1,35 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Grid, GridItem } from '@chakra-ui/react';
 import { Footer } from './Footer';
 import { SectionsLinks } from './SectionsLinks';
 
 export const Layout = ({ children }) => {
   return (
     <>
-      <Box w="100%" h="100vh" bg="gray.900" borderTop="10px solid" borderColor="orange.300" color="white" display="flex">
-        <Box minW="736px" m="auto">
-          <Box position="absolute" top="0">
-            <SectionsLinks />
-          </Box>
+      <Grid
+        display="grid"
+        justifyItems="center"
+        w="100vw"
+        h="100vh"
+        borderTop="10px solid"
+        borderColor="orange.300"
+        templateAreas={`" header"
+                  " main "
+                  " footer "`}
+        gridTemplateRows={'50px, 1fr, 50px'}
+        gridTemplateColumns={'1fr'}
+      >
+        <GridItem area={'header'} placeContent="center">
+          <SectionsLinks />
+        </GridItem>
 
-          <Flex direction="column">
-            <Box as="article" my={4} width="100%">
-              <Box m="0" as="section" color="white">
-                {children}
-              </Box>
-            </Box>
-          </Flex>
-        </Box>
-        <Box position="absolute" bottom={0}>
+        <GridItem area={'main'} direction="column" alignItems="center">
+          {children}
+        </GridItem>
+
+        <GridItem area={'footer'} placeContent="center">
           <Footer />
-        </Box>
-      </Box>
+        </GridItem>
+      </Grid>
     </>
   );
 };

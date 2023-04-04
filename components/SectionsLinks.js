@@ -1,13 +1,16 @@
 import NextLink from 'next/link';
 import section from '@/data/sections';
-import { Text, Flex, HStack } from '@chakra-ui/react';
+import { Text, HStack, useColorMode, IconButton, Grid } from '@chakra-ui/react';
+import { BsFillMoonFill, BsFillBrightnessHighFill } from 'react-icons/bs';
 
 const SectionLinkItem = NextLink;
 
 export const SectionsLinks = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+  const isDark = colorMode === 'dark';
   return (
     <nav>
-      <Flex as="nav" p="40px" alignItems="center">
+      <Grid as="nav" pt="40px" mb={[4, 0]}>
         <HStack spacing="14px">
           {section.map(({ name, url }) => (
             <SectionLinkItem key={name} href={url} passHref>
@@ -16,8 +19,10 @@ export const SectionsLinks = () => {
               </Text>
             </SectionLinkItem>
           ))}
+
+          <IconButton icon={isDark ? <BsFillBrightnessHighFill /> : <BsFillMoonFill />} onClick={toggleColorMode}></IconButton>
         </HStack>
-      </Flex>
+      </Grid>
     </nav>
   );
 };

@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "eslint ./ --fix"
+    "lint:fix": "eslint ./ --fix",
+    "theme": "chakra-cli tokens ./components/theme.js",
+    "theme:watch": "chakra-cli tokens ./components/theme.js --watch"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.17",
@@ -28,6 +30,7 @@
     "react-icons": "^4.7.1"
   },
   "devDependencies": {
+    "@chakra-ui/cli": "^2.3.0",
     "eslint-config-next": "^13.2.4",
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",

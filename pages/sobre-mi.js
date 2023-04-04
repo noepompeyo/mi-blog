@@ -6,12 +6,12 @@ export default function SobreMi() {
   return (
     <>
       <Layout>
-        <Heading textAlign="center" mt={16}>
+        <Heading textAlign="left" mt={2}>
           About
         </Heading>
 
         <Flex direction="row" justify="center" align="center">
-          <Image borderRadius="full" objectFit="cover" boxSize="110px" mt={4} mb={4} src="/assets/noe_pompeyo.jpg" alt="Noe Pompeyo" />
+          <Image borderRadius={8} objectFit="cover" boxSize="150px" mt={4} mb={4} src="/assets/noe-pompeyo.png" alt="Noe Pompeyo" />
         </Flex>
         <Text align="center">Noe Pompeyo Martinez</Text>
         <Text align="center">Frontend Developer </Text>
@@ -19,7 +19,7 @@ export default function SobreMi() {
           <SocialNetworks />
         </Flex>
 
-        <Container h="100vh">
+        <Container mb={16}>
           <Text as="h2" fontSize={18} mt={2}>
             ¿Quién es Noe Pompeyo?
           </Text>

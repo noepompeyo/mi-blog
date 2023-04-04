@@ -8,7 +8,7 @@ export default function PostListItem({ title, date, tags }) {
         {title}
       </Text>
       <Flex as="span" align="center" fontSize="sm" color="white">
-        <CalendarIcon />
+        <CalendarIcon color="#9ca3af" />
         <Text color="orange.300" ml={2}>
           {date}
           {tags?.map((tag) => (
