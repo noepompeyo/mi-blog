@@ -2,12 +2,15 @@ import { MDXRemote } from 'next-mdx-remote';
 import { getFileBySlug, getFiles } from '@/lib/mdx';
 import Layout from '../components/layout';
 import MDXComponents from '../components/MDXComponents';
+import { Box } from '@chakra-ui/react';
+import Fecha from '../components/Fecha-tags';
 
 export default function Post({ source }) {
-  console.log(source);
   return (
     <Layout>
-      <MDXRemote {...source} components={MDXComponents} />
+      <Box width={['300px', '736px']}>
+        <MDXRemote {...source} components={{ MDXComponents, Fecha }} />
+      </Box>
     </Layout>
   );
 }

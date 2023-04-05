@@ -31,7 +31,7 @@ export default function SobreMi() {
             Especialidades
           </Text>
           <Text as="h3" fontSize={14} ml={2} mt={2}>
-            Soy un apasionado por las tecnologías Web, estoy apendiendo programación con JavaScript JavaScript, React, NextJS, GitHub.
+            Soy un apasionado por las tecnologías Web, estoy apendiendo programación con JavaScript, React, NextJS, GitHub, ChakraUI.
           </Text>
         </Container>
       </Layout>

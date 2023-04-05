@@ -8,7 +8,10 @@ const MDXComponents = {
   h5: (props) => <Heading as="h5" my={2} size="sm" {...props} />,
   h6: (props) => <Heading as="h6" my={2} size="sm" {...props} />,
   p: (props) => <Text fontSize="md" lineHeight={6} my={8} {...props} />,
-  br: (props) => <Box height="24px" {...props} />,
+  code: (props) => <Box color="white" fontSize="1em" fontFamily="monospace" {...props} />,
+
+  // a:CustomLink,
+  pre: (props) => <Box bg="gray.800" p={4} whiteSpace="pre" textAlign="left" overflow="auto" {...props} />,
 };
 
 export default MDXComponents;

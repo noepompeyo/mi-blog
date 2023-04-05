@@ -10,7 +10,7 @@ export default function SobreMi({ posts }) {
     <>
       <Layout>
         <Box width={['300px', '736px']}>
-          <Heading align="left" fontFamily="mono" as="h3" fontSize="xl" ml={4}>
+          <Heading align="left" fontFamily="mono" fontSize="xl" ml={4}>
             Últimas publicaciones
           </Heading>
           <Grid>

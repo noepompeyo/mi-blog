@@ -22,7 +22,7 @@ export const Layout = ({ children }) => {
           <SectionsLinks />
         </GridItem>
 
-        <GridItem area={'main'} direction="column" alignItems="center">
+        <GridItem area={'main'} direction="column">
           {children}
         </GridItem>
 

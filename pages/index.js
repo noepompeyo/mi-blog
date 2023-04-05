@@ -31,6 +31,7 @@ export default function Home({ posts }) {
                 <Text fontSize="md" lineHeight={1.75} mt={[4, 0]} m={4}>
                   Soy Front End developer aprendiendo las tecnologias para contruir en la web, me gusta la tecnologia y la ciencia.
                 </Text>
+                <Text ml={4}>#React &emsp; #ChakraUI &emsp; #Javascript</Text>
               </Box>
               <Box width={['25%', '18%']} order={[1, 2]} alignSelf={['start', 'center']} mr={8}>
                 <Image borderRadius="full" objectFit="cover" boxSize="110px" ml={4} src="/assets/noe-pompeyo.png" alt="Noe Pompeyo" />
@@ -57,7 +58,7 @@ export default function Home({ posts }) {
                 </Box>
               </Box>
             </Flex>
-            <Box display="grid" placeContent="center">
+            <Box display="grid" placeContent="center" mt={['0', '150px']}>
               <Footer />
             </Box>
           </Box>
