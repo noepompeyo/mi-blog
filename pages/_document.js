@@ -1,5 +1,8 @@
+import { ColorModeScript } from '@chakra-ui/react';
 import { Html, Head, Main, NextScript } from 'next/document';
+
 import Script from 'next/script';
+import theme from '../components/theme';
 export default function Document() {
   return (
     <Html lang="en">
@@ -17,6 +20,7 @@ export default function Document() {
         />
       </Head>
       <body>
+        <ColorModeScript initialColorMode={theme.initialColorMode}/>
         <Main />
         <NextScript />
       </body>

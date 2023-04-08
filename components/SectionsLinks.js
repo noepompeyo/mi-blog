@@ -7,7 +7,7 @@ const SectionLinkItem = NextLink;
 
 export const SectionsLinks = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const isDark = colorMode === 'dark';
+  const isLight = colorMode === 'dark';
   return (
     <nav>
       <Grid as="nav" pt="40px" mb={[4, 0]}>
@@ -20,7 +20,7 @@ export const SectionsLinks = () => {
             </SectionLinkItem>
           ))}
 
-          <IconButton icon={isDark ? <BsFillBrightnessHighFill /> : <BsFillMoonFill />} onClick={toggleColorMode}></IconButton>
+          <IconButton icon={isLight ? <BsFillBrightnessHighFill/> : <BsFillMoonFill />  } onClick={toggleColorMode}></IconButton>
         </HStack>
       </Grid>
     </nav>
