@@ -20,7 +20,7 @@ export const SectionsLinks = () => {
             </SectionLinkItem>
           ))}
 
-          <IconButton icon={isLight ? <BsFillBrightnessHighFill/> : <BsFillMoonFill />  } onClick={toggleColorMode}></IconButton>
+          <IconButton icon={isLight ? <BsFillBrightnessHighFill /> : <BsFillMoonFill />} onClick={toggleColorMode}></IconButton>
         </HStack>
       </Grid>
     </nav>

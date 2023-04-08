@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <MDXProvider components={MDXComponents}>
-        <ChakraProvider  theme={theme}>
+        <ChakraProvider theme={theme}>
           <GAScript />
           <Component {...pageProps} />;
         </ChakraProvider>

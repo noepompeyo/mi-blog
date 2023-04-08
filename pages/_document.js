@@ -20,7 +20,7 @@ export default function Document() {
         />
       </Head>
       <body>
-        <ColorModeScript initialColorMode={theme.initialColorMode}/>
+        <ColorModeScript initialColorMode={theme.initialColorMode} />
         <Main />
         <NextScript />
       </body>
