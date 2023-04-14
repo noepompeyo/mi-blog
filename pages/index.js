@@ -29,7 +29,7 @@ export default function Home({ posts }) {
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Noe Pompeyo" />
           <meta name="twitter:description" content="Frontend Developer Autodidacta con Javascript | CSS | HTML" />
-          <meta name="twitter:image" content="/noe-pompeyo.png" />
+          <meta name="twitter:image" content="https://github.com/noepompeyo/noepm/blob/main/public/noepompeyo.png?raw=true" />
           <meta name="twitter:site" content="@NoePompeyo" />
           <meta name="twitter:creator" content="@NoePompeyo" />
         </Head>
