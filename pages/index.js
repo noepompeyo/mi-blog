@@ -13,7 +13,7 @@ export default function Home({ posts }) {
     <>
       <ChakraProvider>
         <Head>
-          <link rel="icon" href="/astronauta.png" type="image/png"/>
+          <link rel="icon" href="/astronauta.png" type="image/png" />
           <title>noepm @NoePompeyo</title>
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
