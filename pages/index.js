@@ -24,7 +24,7 @@ export default function Home({ posts }) {
           <meta property="og:site_name" content="Noe Pompeyo" />
           <meta property="og:description" content="Frontend Developer Autodidacta con Javascript | CSS | HTML" />
           <meta property="og:title" content="Noe Pompeyo" />
-          <meta property="og:image" content="/noe-pompeyo.png" />
+          <meta property="og:image" content="https://github.com/noepompeyo/noepm/blob/main/public/noepompeyo.png?raw=true" />
           <meta property="og:locale" content="es_ES" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Noe Pompeyo" />
