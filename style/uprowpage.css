@@ -1,0 +1,12 @@
+.arrow-scroll {
+    position: fixed;
+    bottom: 40px;
+    right: 40px; 
+    width: 48px;
+    height: 48px;
+}
+@media (min-width:1024px) {
+    .arrow-scroll {
+        right: 120px;
+    }
+}

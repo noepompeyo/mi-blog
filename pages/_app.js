@@ -3,6 +3,7 @@ import { MDXProvider } from '@mdx-js/react';
 import GAScript from '../components/GoogleAnalitics';
 import MDXComponents from '../components/MDXComponents';
 import theme from '../components/theme';
+import '@/style/uprowpage.css';
 
 export default function App({ Component, pageProps }) {
   return (

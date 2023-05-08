@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import MDXComponents from '../components/MDXComponents';
 import { Box } from '@chakra-ui/react';
 import Fecha from '../components/Fecha-tags';
+import UpRowPage from '../components/UpRowPage';
 
 export default function Post({ source }) {
   return (
@@ -11,6 +12,7 @@ export default function Post({ source }) {
       <Box width={['300px', '736px']}>
         <MDXRemote {...source} components={{ MDXComponents, Fecha }} />
       </Box>
+      <UpRowPage />
     </Layout>
   );
 }

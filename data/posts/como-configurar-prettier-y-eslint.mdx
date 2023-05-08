@@ -9,14 +9,14 @@ tags:
 
 ### ¿Que es Prettier?
 
-Prettier ofrece soporte para varios lenguajes y frameworks.Lo que ofrece Prettier es tomar tu código y “re-formatearlo” en base a las configuraciones definidas manteniendo así un estilo consistente. Haciéndolo mucho más facil de leer.
+Prettier ofrece soporte para varios lenguajes y frameworks.Lo que hace Prettier es tomar tu código y “re-formatearlo” en base a las configuraciones definidas manteniendo así un estilo consistente. Haciéndolo mucho más facil de leer.
 
 ### ¿Que es Eslint?
 
 ESLin es una herramienta de código abierto enfocada en el proceso de “lintig” para javascript (o más correctamente para ECMAScript).
-ESLint es la herramienta predominante para la tarea de “limpiar” código javascript, señalando los errores de codigo antes de correr el programa
+ESLint es la herramienta que se encarga de “limpiar” código javascript, señalando los errores de codigo antes de correr el programa.
 
-  Lo primero que debemos de hacer es ir ala  consola para instalar las dependencias y herramientas de eslint y de prettier, recordar que hay que instalarla con el flag -D para que se einstalen como dependencias de desarrollo
+  Lo primero que debemos de hacer es ir ala  consola para instalar las dependencias (**para esta parte deberiamos tener instalada node.js**), y herramientas de eslint y de prettier, recordar que hay que instalarla con el flag -D para que se einstalen como dependencias de desarrollo
 
 ```javascript
 npm install eslint-config-prettier eslint-plugin-jsx-a11y 
@@ -28,7 +28,8 @@ Luego crearemos un nuevo archivo en la raiz del proyecto que se llamara : **.esl
 
 
 
-Para mas configuracines de eslint aqui te dejo la documentacion 📤 [Eslint](https://eslint.org/) 
+Para mas configuracines de eslint aqui te dejo la documentacion 
+📤 [Eslint](https://eslint.org/) 
 
 Y para la configuracion de prettier creamos un archivoen la raiz del proyecto con el nombre: **prettier.config.js** y escribimos el siguiente codigo
 
@@ -39,7 +40,7 @@ Y para la configuracion de prettier creamos un archivoen la raiz del proyecto co
 Si quieres conocer mas sobre las configuraciones qui te dejo la documentacion 📤[Prettier](https://prettier.io/docs/en/options.html)
 
 Para finalizar la configuracion nos vamos a la carpeta package.json para agregar los siguientes scrips
-y podremos ejecutar en la terminal los comandos **npm run lint y npm run lint:fix**
+y podremos ejecutar en la terminal los comandos **npm run lint** y **npm run lint:fix**
 
   ![package](/image/configurar-pretier/pakackge-json.png)
 ### Conclucion
